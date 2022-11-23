@@ -1,0 +1,30 @@
+#weather,
+#city,
+#forecast {
+  text-align: center;
+}
+body {
+  position: relative;
+  top: 40px;
+}
+#topicon {
+  text-align: center;
+  font-size: 700%;
+}
+form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+b {
+  color: rgb(63, 63, 231);
+}
+p a {
+  text-decoration: none;
+}
+.forecast-row {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #fff;
+}
+.next-row {
+  padding-top: 20px;
+}

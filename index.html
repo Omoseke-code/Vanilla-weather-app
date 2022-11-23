@@ -23,49 +23,79 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Weather</h1>
-      <h2>Lagos</h2>
-      <h3>Mostly sunny</h3>
-      <i class="fa-solid fa-sun-bright"></i>
-      <div class="row">
-        <div class="col">
+    <div class="container" style="background-color: #ffab25">
+      <form>
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="search"
+              placeholder="Enter a city ..."
+              class="form-control search-input"
+            />
+          </div>
+          <div class="col-3 p-0">
+            <input
+              type="submit"
+              value="Search"
+              class="btn w-95"
+              style="background-color: #f3f360"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="row forecast-row">
+        <div class="container col-6">
+          <h2 id="city">Lagos</h2>
+          <h1 id="topicon">🌞</h1>
+          <h3 id="forecast">Mostly sunny</h3>
+        </div>
+        <div class="col-3">
           <h1>32</h1>
           <h2>03:59PM</h2>
         </div>
-        <div class="col">
-          <p>Humidity</p>
-          <p>Wind</p>
+        <div class="col-3">
+          <p>Humidity:</p>
+          <p>Wind:</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row next-row">
         <div class="col">
-          <h3>Thursday</h3>
-          <i class="fa-regular fa-cloud-rain"></i>
+          <h4>Thursday</h4>
+          <h1>🌤️</h1>
           <h4>32</h4>
         </div>
         <div class="col">
-          <h3>Friday</h3>
-          <i class="fa-regular fa-sun-bright"></i>
+          <h4>Friday</h4>
+          <h1>🌞</h1>
           <h4>33</h4>
         </div>
         <div class="col">
-          <h3>Saturday</h3>
-          <i class="fa-solid fa-sun-bright"></i>
+          <h4>Saturday</h4>
+          <h1>🌞</h1>
           <h4>32</h4>
         </div>
         <div class="col">
-          <h3>Sunday</h3>
-          <i class="fa-solid fa-cloud-rain"></i>
+          <h4>Sunday</h4>
+          <h1>🌤️</h1>
           <h4>33</h4>
         </div>
         <div class="col">
-          <h3>Monday</h3>
-          <i class="fa-regular fa-cloud-rain"></i>
+          <h4>Monday</h4>
+          <h1>🌧️</h1>
           <h4>32</h4>
         </div>
       </div>
     </div>
+    <p class="ms-5">
+      This project was coded by <b>Omoseke Salami</b> and
+      <a
+        href="https://github.com/Omoseke-code/Vanilla-weather-app"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><b>open-sourced</b></a
+      >
+      and <b>hosted on netlify</b>
+    </p>
     <script src="app.js"></script>
   </body>
 </html>
