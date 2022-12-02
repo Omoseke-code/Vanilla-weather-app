@@ -28,3 +28,11 @@ p a {
 .next-row {
   padding-top: 20px;
 }
+li {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+#forecast,
+#city {
+  text-transform: capitalize;
+}

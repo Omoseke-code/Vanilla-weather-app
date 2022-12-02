@@ -12,6 +12,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/4e908a59d6.js"
       crossorigin="anonymous"
@@ -44,18 +45,20 @@
         </div>
       </form>
       <div class="row forecast-row">
-        <div class="container col-6">
-          <h2 id="city">Lagos</h2>
+        <div class="container col-5">
+          <h2 id="city"></h2>
           <h1 id="topicon">🌞</h1>
-          <h3 id="forecast">Mostly sunny</h3>
+          <h3 id="forecast"></h3>
         </div>
         <div class="col-3">
-          <h1>32</h1>
-          <h2>03:59PM</h2>
+          <h1 id="temp"></h1>
+          <h2 id="time"></h2>
         </div>
-        <div class="col-3">
-          <p>Humidity:</p>
-          <p>Wind:</p>
+        <div class="col-4">
+          <ul>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span>Km/h</li>
+          </ul>
         </div>
       </div>
       <div class="row next-row">
