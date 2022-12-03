@@ -24,7 +24,7 @@
     ></script>
   </head>
   <body>
-    <div class="container" style="background-color: #fff;">
+    <div class="container w-85" id="weather-body">
       <form id="search-form">
         <div class="row">
           <div class="col-9">
@@ -41,29 +41,27 @@
               type="submit"
               value="Search"
               class="btn w-95"
-              style="background-color: #f3f360"
+              style="background-color: #edb1f1"
             />
           </div>
         </div>
       </form>
       <div class="row forecast-row">
-        <div class="container col-5">
+        <div class="container col">
           <ul>
           <li><h2 id="city"></h2></li>
           <li><img src="" alt="forecast icon" id="topicon" /></li>
           <li><h3 id="forecast"></h3></li>
           </ul>
         </div>
-        <div class="col-3 weather-temp">
+        <div class="col">
           <b id="temp"></b><span class="units"><a href="#" id="celsius-link" class="active">℃</a> | <a href="#" id="fahrenheit-link"
             >℉</a></span>
           <p>
             Last updated
             <span id="time"></span>
           </p>
-        </div>
-        <div class="col-4">
-          <ul>
+          <ul style="text-align: left;">
             <li>Humidity: <span id="humidity"></span>%</li>
             <li>Wind: <span id="wind"></span>Km/h</li>
           </ul>

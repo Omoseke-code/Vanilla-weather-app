@@ -1,12 +1,19 @@
+body {
+  position: relative;
+  top: 40px;
+  background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+}
 #weather,
 #city,
 #forecast {
   text-align: center;
 }
-body {
-  position: relative;
-  top: 40px;
+#weather-body {
+  border: 2px solid rgb(241, 129, 241);
+  border-radius: 18px;
+  background-color: #8ef6e4;
 }
+
 #topicon {
   text-align: center;
   font-size: 700%;
