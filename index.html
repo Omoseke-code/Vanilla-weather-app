@@ -24,14 +24,16 @@
     ></script>
   </head>
   <body>
-    <div class="container" style="background-color: #ffab25">
-      <form>
+    <div class="container" style="background-color: #fff;">
+      <form id="search-form">
         <div class="row">
           <div class="col-9">
             <input
               type="search"
               placeholder="Enter a city ..."
               class="form-control search-input"
+              id="city-input"
+              autocomplete="off"
             />
           </div>
           <div class="col-3 p-0">
@@ -46,13 +48,18 @@
       </form>
       <div class="row forecast-row">
         <div class="container col-5">
-          <h2 id="city"></h2>
-          <h1 id="topicon">🌞</h1>
-          <h3 id="forecast"></h3>
+          <ul>
+          <li><h2 id="city"></h2></li>
+          <li><h1><img src="" alt="forecast icon" id="topicon" /></h1></li>
+          <li><h3 id="forecast"></h3></li>
+          </ul>
         </div>
         <div class="col-3">
           <h1 id="temp"></h1>
-          <h2 id="time"></h2>
+          <p>
+            Last updated
+            <span id="time"></span>
+          </p>
         </div>
         <div class="col-4">
           <ul>
@@ -63,29 +70,31 @@
       </div>
       <div class="row next-row">
         <div class="col">
-          <h4>Thursday</h4>
-          <h1>🌤️</h1>
-          <h4>32</h4>
+          <ul>
+          <li><h5 id="date1"></h5></li>
+          <li><img src="" alt="forecast icon" id="icon1" /></li>
+          <li id="temp1"></li>
+          </ul>
         </div>
         <div class="col">
-          <h4>Friday</h4>
-          <h1>🌞</h1>
-          <h4>33</h4>
+          <ul>
+          <li><h5 id="date2"></h5></li>
+          <li><img src="" alt="forecast icon" id="icon2" /></li>
+          <li id="temp2"></li>
+          </ul>
         </div>
         <div class="col">
-          <h4>Saturday</h4>
-          <h1>🌞</h1>
-          <h4>32</h4>
+          <ul>
+          <li><h5 id="date3"></h5></li>
+          <li><img src="" alt="forecast icon" id="icon3" /></li>
+          <li id="temp3"></li>
+        </ul>
         </div>
         <div class="col">
-          <h4>Sunday</h4>
-          <h1>🌤️</h1>
-          <h4>33</h4>
-        </div>
-        <div class="col">
-          <h4>Monday</h4>
-          <h1>🌧️</h1>
-          <h4>32</h4>
+          <ul>
+          <li></li><h5 id="date4"></h5></li>
+          <li><img src="" alt="forecast icon" id="icon4" /></li>
+          <li id="temp4"></li>
         </div>
       </div>
     </div>
