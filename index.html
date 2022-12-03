@@ -50,12 +50,13 @@
         <div class="container col-5">
           <ul>
           <li><h2 id="city"></h2></li>
-          <li><h1><img src="" alt="forecast icon" id="topicon" /></h1></li>
+          <li><img src="" alt="forecast icon" id="topicon" /></li>
           <li><h3 id="forecast"></h3></li>
           </ul>
         </div>
-        <div class="col-3">
-          <h1 id="temp"></h1>
+        <div class="col-3 weather-temp">
+          <b id="temp"></b><span class="units"><a href="#" id="celsius-link" class="active">℃</a> | <a href="#" id="fahrenheit-link"
+            >℉</a></span>
           <p>
             Last updated
             <span id="time"></span>
@@ -68,7 +69,7 @@
           </ul>
         </div>
       </div>
-      <div class="row next-row">
+      <div class="row next-row flex-nowrap">
         <div class="col">
           <ul>
           <li><h5 id="date1"></h5></li>
