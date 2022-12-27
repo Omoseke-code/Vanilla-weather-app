@@ -24,7 +24,7 @@ form {
 b {
   color: rgb(63, 63, 231);
 }
-p a,
+footer a,
 span a {
   text-decoration: none;
 }
@@ -70,6 +70,7 @@ div.container p {
 
   width: 70px;
 }
+
 #date1,
 #date2,
 #date3,
