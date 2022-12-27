@@ -16,7 +16,6 @@ body {
 
 #topicon {
   text-align: center;
-  font-size: 700%;
 }
 form {
   padding-top: 20px;
@@ -50,11 +49,16 @@ img {
 div.container p {
   font-size: 18px;
 }
-.col-3 {
-  position: relativ
-}
-.col-3 ul{
+.frr {
   position: relative;
+  right:30px;
+}
+#humid {
+  position: relative;
+  right: 33px;
+}
+.frr ul{
+  position:relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -63,7 +67,7 @@ div.container p {
 #icon2,
 #icon3,
 #icon4 {
-  margin: 0 auto;
+
   width: 70px;
 }
 #date1,
@@ -73,7 +77,7 @@ div.container p {
 #temp1,
 #temp2,
 #temp3,
-#temp4, #icon1 {
+#temp4 {
   text-align: center;
 }
 .active {
