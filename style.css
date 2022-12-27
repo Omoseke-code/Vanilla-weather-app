@@ -50,10 +50,20 @@ img {
 div.container p {
   font-size: 18px;
 }
+.col-3 {
+  position: relativ
+}
+.col-3 ul{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #icon1,
 #icon2,
 #icon3,
 #icon4 {
+  margin: 0 auto;
   width: 70px;
 }
 #date1,
@@ -63,7 +73,7 @@ div.container p {
 #temp1,
 #temp2,
 #temp3,
-#temp4 {
+#temp4, #icon1 {
   text-align: center;
 }
 .active {

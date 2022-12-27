@@ -25,13 +25,13 @@ function formatDate(timestamp) {
 function formatFutureDates(timestamp) {
   let date = new Date(timestamp);
   let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thur",
+    "Fri",
+    "Sat",
   ];
   let day = days[date.getDay()];
   return `${day}`;
